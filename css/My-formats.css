@@ -38,6 +38,16 @@
     grid-template-columns: repeat(auto-fill , minmax(48% , 1fr));
     gap: 2%;
 }
+
+.features-g-s{
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 15px;
+}
+
+.overview-g-s{
+    grid-template-columns: repeat(auto-fill , minmax(210px , 1fr));
+    gap: 16px;
+}
 /* end grid formats */
 
 /* start global formats */
@@ -50,8 +60,12 @@
 
 /* padding */
 .padding-t-b{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.card-p{
+    padding: 30px;
 }
 
 /* dispaly */
@@ -87,3 +101,28 @@ a{
     text-decoration: none;
 }
 /* end list and link formats */
+
+/* start head text */
+.head-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-text-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.head-text h3{
+    margin-bottom: 17px;
+    font-size: 35px;
+}
+@media (max-width:768px) {
+    .head-text h3{
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .head-text p{
+        font-size: 13px;
+    }
+}
+/* end head text */

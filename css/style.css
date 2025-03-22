@@ -498,3 +498,83 @@ nav ul li:hover a{
     right: 10px;
 }
 /* end about */
+/* start features */
+.features .features-content .card {
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    color: var(--main-text-color);
+}
+.features .features-content .card i{
+    margin-bottom: 15px;
+    color: var(--main-color);
+    background-color: rgb(241, 124, 19 , .2);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    transition: var(--transition);
+}
+.features .features-content .card:hover i{
+    transform: scale(1.2) rotate(360deg);
+}
+.features .features-content .card h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.features .features-content .card p{
+    font-size: 16px;
+    width: 80%;
+}
+/* end features */
+/* start overview */
+.overview .container {
+    background-color: white;
+    padding: 20px;
+}
+.overview .container .head-text h3{
+    position: relative;
+    padding: 20px;
+}
+.overview .container .head-text h3::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: var(--transition);
+}
+.overview .container:hover .head-text h3::after{
+    width: 70%;
+}
+.overview .container .overview-content .card{
+    background-color: #fbf8f4;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--main-text-color);
+    border: 1px solid #dcdbdb;
+    transition: var(--transition);
+}
+.overview .container .overview-content .card span{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.overview .container .overview-content .card h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.overview .container .overview-content .card:hover{
+    transform: translateY(-5px);
+    border-color: var(--main-hover-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+/* end overview */

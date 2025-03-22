@@ -1,0 +1,89 @@
+/*start color of the page */
+.color-1{
+    background-color: #fbf7f3;
+}
+.color-2{
+    background-color: #f8f0e9;
+}
+/*end color of the page */
+
+/* start flex formats */
+.d-flex{
+    display: flex;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-d-column{
+    flex-direction: column;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+.f-between{
+    justify-content: space-between;
+}
+.gap-20{
+    gap: 20px;
+}
+/* end flex formats */
+
+/* start grid formats */
+.d-grid{
+    display: grid;
+}
+.grid-system{
+    grid-template-columns: repeat(auto-fill , minmax(48% , 1fr));
+    gap: 2%;
+}
+/* end grid formats */
+
+/* start global formats */
+.w-full{
+    width: 100%;
+}
+
+/* margin */
+
+
+/* padding */
+.padding-t-b{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* dispaly */
+.d-none{
+    display: none;
+}
+
+.d-block{
+    display: block;
+}
+/* position */
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position:absolute ;
+}
+.p-center{
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* end global formats */
+
+
+/* start list and link formats */
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/* end list and link formats */

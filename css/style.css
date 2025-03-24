@@ -28,7 +28,7 @@ body{
 /* small */
 @media (max-width: 767px){
     .container{
-        width: 80%;
+        width: 95%;
     }
 }
 @media (min-width: 768px){
@@ -190,7 +190,6 @@ nav ul li:hover a{
 /* end nav */
 /* start  home*/
 .home{
-    padding-top: 60px;
     min-height: calc(100vh - 250px);
 }
 .home .info {
@@ -317,7 +316,7 @@ nav ul li:hover a{
 /* end  home*/
 /* start skewed */
 .skewed {
-    position: relative;
+    position: absolute;
     bottom: -100px;
     right: 0;
     left: 0;
@@ -578,3 +577,92 @@ nav ul li:hover a{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 /* end overview */
+/* start excerpt */
+.excerpt .container .excerpt-content{
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    border-top:6px solid;
+    border-top-color: var(--main-color);
+}
+.excerpt .container .excerpt-content .one{
+    text-align: right;
+    margin-bottom: 15px;
+    color: var(--main-hover-color);
+}
+.excerpt .container .excerpt-content h3{
+    width: fit-content;
+    margin-bottom: 25px;
+    padding-bottom:20px ;
+    font-size: 25px;
+    color: var(--main-text-color);
+    font-weight: 500;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.excerpt .container .excerpt-content h3::after{
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 50%;
+    height: 3px;
+    background-color: var(--main-color);
+    border-radius: 60px;
+}
+.excerpt .container .excerpt-content p:first-of-type::first-letter{
+    font-size: 3.5em;
+    float: left;
+    line-height: 1;
+    margin-right: 10px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+.excerpt .container .excerpt-content p{
+    margin-bottom: 25px;
+    line-height: 1.8;
+    color: var(--main-text-color);
+    text-align: justify;
+}
+.excerpt .container .excerpt-content .quate{
+    line-height: 1.8;
+    color: var(--main-text-color);
+    padding-left: 30px;
+    text-align: justify;
+    border-left: 2px solid color-mix(in srgb, var(--main-color), transparent 70%)
+}
+.excerpt .excerpt-content .footer{
+    text-align: center;
+    color: var(--main-hover-color);
+    font-size: 18px;
+}
+.excerpt .container .button-read{
+    margin-top: 50px;
+    text-align: center;
+}
+.button-read a{
+    display: inline-block;
+    color: white;
+    background-color: var(--main-color);
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: var(--transition);
+    position: relative;
+    width: 180px;
+}
+.button-read a:hover{
+    transform: translateY(-10px);
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.button-read a i{
+    position: relative;
+    left: 5px;
+    transition: var(--transition);
+}
+.button-read a:hover i{
+    left: 16px;
+}
+/* end excerpt */

@@ -28,6 +28,37 @@
 .gap-20{
     gap: 20px;
 }
+.gap-10{
+    gap: 10px;
+}
+.gap-5{
+    gap: 5px;
+}
+
+/* start purchase flex system */
+.gap-3{
+    gap:2%;
+}
+.box-f-s{
+    flex-basis: 23.5%;
+}
+@media (max-width:992px) {
+    .gap-3{
+        column-gap:4%;
+    }
+    .box-f-s{
+        flex-basis: 48%;
+    }
+}
+@media (max-width:768px) {
+    .gap-3{
+        gap: 0;
+    }
+    .box-f-s{
+        flex-basis: 100%;
+    }
+}
+/* end purchase flex system */
 /* end flex formats */
 
 /* start grid formats */
@@ -55,9 +86,22 @@
     width: 100%;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
 /* margin */
 
+.margin-t-50{
+    margin-top: 50px;
+}
 
+.margin-b-25{
+    margin-bottom: 25px;
+}
 /* padding */
 .padding-t-b{
     padding-top: 70px;
